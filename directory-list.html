@@ -36,20 +36,29 @@
 </head>
 <body>
     <h1>Lista de Diretórios</h1>
-    <ul>
-        <script>
-            var dirs = [];
-            <?php
-                $directories = array_filter(glob('*'), 'is_dir');
-                foreach ($directories as $dir) {
-                    echo 'dirs.push("' . $dir . '");';
-                }
-            ?>
-            dirs.forEach(function (dir) {
-                document.write('<li><a href="' + dir + '">' + dir + '</a></li>');
-            });
-        </script>
-    </ul>
+    <ul id="directoryList"></ul>
+    <script>
+        var dirs = [];
+
+        // Adicione os diretórios manualmente
+        dirs.push("diretorio1");
+        dirs.push("diretorio2");
+
+        // Função para criar elementos de lista e adicionar à página
+        function addDirectoryToList(directory) {
+            var ul = document.getElementById("directoryList");
+            var li = document.createElement("li");
+            var a = document.createElement("a");
+            a.href = directory;
+            a.textContent = directory;
+            li.appendChild(a);
+            ul.appendChild(li);
+        }
+
+        // Adicione cada diretório à lista
+        dirs.forEach(function (dir) {
+            addDirectoryToList(dir);
+        });
+    </script>
 </body>
 </html>
-
