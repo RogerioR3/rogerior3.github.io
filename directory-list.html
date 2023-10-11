@@ -38,7 +38,13 @@
     <h1>Lista de Diretórios</h1>
     <ul>
         <script>
-            var dirs = <?php echo json_encode(array_filter(glob('*'), 'is_dir')); ?>;
+            var dirs = [];
+            <?php
+                $directories = array_filter(glob('*'), 'is_dir');
+                foreach ($directories as $dir) {
+                    echo 'dirs.push("' . $dir . '");';
+                }
+            ?>
             dirs.forEach(function (dir) {
                 document.write('<li><a href="' + dir + '">' + dir + '</a></li>');
             });
@@ -46,3 +52,4 @@
     </ul>
 </body>
 </html>
+
