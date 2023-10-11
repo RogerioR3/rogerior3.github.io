@@ -38,16 +38,29 @@
     <h1>Lista de Diretórios</h1>
     <ul id="directoryList"></ul>
     <script>
-        var dirs = [];
+        // Função para fazer uma requisição à API do GitHub
+        function fetchGitHubContent() {
+            var url = "https://api.github.com/repos/RogerioR3/rogerior3.github.io/contents/";
 
-        // Adicione os diretórios manualmente
-        dirs.push("diretorio1");
-        dirs.push("diretorio2");
+            // Use a função fetch para fazer a requisição
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    // Filtra apenas os diretórios
+                    var dirs = data.filter(item => item.type === "dir");
+
+                    // Adiciona cada diretório à lista
+                    dirs.forEach(dir => {
+                        addDirectoryToList(dir.name);
+                    });
+                })
+                .catch(error => console.error("Erro ao obter conteúdo do GitHub:", error));
+        }
 
         // Função para criar elementos de lista e adicionar à página
         function addDirectoryToList(directory) {
             var ul = document.getElementById("directoryList");
-            var li = document.createElement("li"); 
+            var li = document.createElement("li");
             var a = document.createElement("a");
             a.href = directory;
             a.textContent = directory;
@@ -55,10 +68,9 @@
             ul.appendChild(li);
         }
 
-        // Adicione cada diretório à lista
-        dirs.forEach(function (dir) {
-            addDirectoryToList(dir);
-        });
+        // Carrega a lista de diretórios ao carregar a página
+        fetchGitHubContent();
     </script>
 </body>
 </html>
+
