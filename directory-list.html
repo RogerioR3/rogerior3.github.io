@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Diretórios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0366d6;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Diretórios</h1>
+    <ul>
+        <script>
+            var dirs = <?php echo json_encode(array_filter(glob('*'), 'is_dir')); ?>;
+            dirs.forEach(function (dir) {
+                document.write('<li><a href="' + dir + '">' + dir + '</a></li>');
+            });
+        </script>
+    </ul>
+</body>
+</html>
