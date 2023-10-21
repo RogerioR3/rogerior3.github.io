@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Exibição de Saída</title>
+</head>
+<body>
+    <h1>Saída do Código Executado</h1>
+    <pre id="output"></pre>
+
+    <script>
+        // Use JavaScript para recuperar e exibir a saída do arquivo output.txt
+        fetch('/output.txt') // Certifique-se de que o caminho esteja correto
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('output').textContent = data;
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+</body>
+</html>
