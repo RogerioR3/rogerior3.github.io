@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Ambiente de Desenvolvimento Online</title>
+</head>
+<body>
+    <h1>Editor de Código</h1>
+    <textarea id="editor">
+# Este é um exemplo em Python
+print("Olá, mundo!")
+    </textarea>
+    <button id="runButton">Executar</button>
+    <h2>Saída:</h2>
+    <pre id="output"></pre>
+
+    <script>
+        document.getElementById("runButton").addEventListener("click", function () {
+            var code = document.getElementById("editor").value;
+            
+            fetch('/run-python', {
+                method: 'POST',
+                body: JSON.stringify({ code: code }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById("output").textContent = result;
+            })
+            .catch(error => {
+                document.getElementById("output").textContent = "Erro: " + error.message;
+            });
+        });
+    </script>
+</body>
+</html>

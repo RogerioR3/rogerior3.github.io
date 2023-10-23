@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Códigos</title>
+    <style>
+        #editor {
+            width: 100%;
+            height: 200px;
+        }
+        #output {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 100%;
+            height: 200px;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1>Editor de Código Online</h1>
+    <div id="editor">alert("Olá, Mundo!");
+	</div>
+    <button id="runButton">Executar</button>
+    <div id="output"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.8/ace.js"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.getSession().setMode("ace/mode/javascript");
+        editor.setFontSize(14);
+
+        var runButton = document.getElementById("runButton");
+        var output = document.getElementById("output");
+
+        runButton.addEventListener("click", function() {
+            var code = editor.getValue();
+            try {
+                var result = eval(code);
+                output.textContent = result;
+            } catch (error) {
+                output.textContent = "Erro: " + error;
+            }
+        });
+    </script>
+</body>
+</html>
