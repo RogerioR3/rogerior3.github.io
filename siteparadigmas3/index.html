@@ -38,7 +38,16 @@
 			            <li role="presentation"><a href="#divi" aria-controls="divi" role="tab" data-toggle="tab">Linguagens de prgramação</a></li>
 			          </ul>
 			        </li> 
-			        <li  role="presentation"><a href="#n2" aria-controls="n2" role="tab" data-toggle="tab">N2</a></li>
+					<li  role="presentation" class="dropdown bg-dark text-green">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">N2 <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			          	<li role="presentation"><a href="#n2" aria-controls="n2" role="tab" data-toggle="tab" >Active N2</a></li>
+			          	<li role="separator" class="divider"></li>
+			            <li role="presentation" class="active"><a href="#prop" aria-controls="prop" role="tab" data-toggle="tab" >Propósito da Linguagem</a></li>
+			            <li role="presentation"><a href="#crit" aria-controls="crit" role="tab" data-toggle="tab">Critérios de Avaliação</a></li>
+			          </ul>
+			        </li> 
+			        <!--li  role="presentation"><a href="#n2" aria-controls="n2" role="tab" data-toggle="tab">N2</a></li-->
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
 
@@ -47,7 +56,7 @@
 
   		<section>
   			<div class="tab-content">
-					<div role="tabpanel" class="tab-pane" id="n1">
+				<div role="tabpanel" class="tab-pane" id="n1">
 					<div class="container">
 			  			<div class="tab-content">
 						    <div role="tabpanel" class="tab-pane active" id="add">
@@ -58,78 +67,78 @@
 						    	<div class="row">
 
 								    <div id="sobres-painel" class="panel-group col-sm-6">
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h3 data-toggle="collapse" data-target="#primeiro-paragrafo" class="panel-title" data-parent="#sobres-painel"><strong>Imperativo</strong></h3>
-										</div>
-										<div id="primeiro-paragrafo" class="collapse.in">
-											<div class="panel-body">
-											<div style="white-space: pre-line;">
-												<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esse paradigma segue o conceito de um estado e de ações que manipulam esse estado, nele encontramos procedimentos que servem de mecanismos de estruturação.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Podemos denominá-lo de procedural por incluir sub-rotinas ou procedimentos para estruturação.
-Ex:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Ada
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> ALGOL
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> C
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Basic</p></div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#primeiro-paragrafo" class="panel-title" data-parent="#sobres-painel"><strong>Imperativo</strong></h3>
+											</div>
+											<div id="primeiro-paragrafo" class="collapse.in">
+												<div class="panel-body">
+												<div style="white-space: pre-line;">
+													<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esse paradigma segue o conceito de um estado e de ações que manipulam esse estado, nele encontramos procedimentos que servem de mecanismos de estruturação.
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Podemos denominá-lo de procedural por incluir sub-rotinas ou procedimentos para estruturação.
+	Ex:
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Ada
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> ALGOL
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> C
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Basic</p></div>
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h3 data-toggle="collapse" data-target="#segundo-paragrafo" class="panel-title" data-parent="#sobres-painel"><strong>Funcional</strong></h3>
-										</div>
-										<div id="segundo-paragrafo" class="collapse">
-											<div class="panel-body">
-											<div style="white-space: pre-line;">
-												<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Este paradigma trata a computação como uma avaliação de funções matemáticas.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Este método enfatiza a aplicação de funções, as quais são tratadas como valores de primeira importância, ou seja, funções podem ser parâmetros ou valores de entrada para outras funções e podem ser os valores de retorno ou saída de uma função.
-Ex:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> LISP
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Haskell
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Lambda
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> ML(criado em universidade)</p></div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#segundo-paragrafo" class="panel-title" data-parent="#sobres-painel"><strong>Funcional</strong></h3>
+											</div>
+											<div id="segundo-paragrafo" class="collapse">
+												<div class="panel-body">
+												<div style="white-space: pre-line;">
+													<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Este paradigma trata a computação como uma avaliação de funções matemáticas.
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Este método enfatiza a aplicação de funções, as quais são tratadas como valores de primeira importância, ou seja, funções podem ser parâmetros ou valores de entrada para outras funções e podem ser os valores de retorno ou saída de uma função.
+	Ex:
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> LISP
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Haskell
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Lambda
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> ML(criado em universidade)</p></div>
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h3 data-toggle="collapse" data-target="#terceiro-paragrafo" class="panel-title" data-parent="#sobres-painel"><strong>Lógico</strong></h3>			
-										</div>
-										<div id="terceiro-paragrafo" class="collapse">
-											<div class="panel-body">
-											<div style="white-space: pre-line;">
-												<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nesse paradigma programas são relações entre Entrada/Saída. Possui estilo declarativo, como o paradigma funcional. Inclui características imperativas, por questões de eficiência. Aplicações em prototipação em geral, sistemas especialistas, bancos de dados, etc.
-Ex:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Popler
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Conniver
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> QLISP
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Mercury </p></div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#terceiro-paragrafo" class="panel-title" data-parent="#sobres-painel"><strong>Lógico</strong></h3>			
+											</div>
+											<div id="terceiro-paragrafo" class="collapse">
+												<div class="panel-body">
+												<div style="white-space: pre-line;">
+													<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nesse paradigma programas são relações entre Entrada/Saída. Possui estilo declarativo, como o paradigma funcional. Inclui características imperativas, por questões de eficiência. Aplicações em prototipação em geral, sistemas especialistas, bancos de dados, etc.
+	Ex:
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Popler
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Conniver
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> QLISP
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Mercury </p></div>
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h3 data-toggle="collapse" data-target="#quarto-paragrafo" class="panel-title" data-parent="#sobres-painel"><strong>Orientado a Obejetos</strong></h3>
-										</div>
-										<div id="quarto-paragrafo" class="collapse">
-											<div class="panel-body">
-											<div style="white-space: pre-line;">
-												<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A programação Orientada a Objetos é baseada na composição e interação de diversas unidades de softwares denominados objetos. O funcionamento de um software orientado a objetos se dá através do relacionamento e troca de mensagens entre esses objetos. Esses objetos são classes, e nessas classes os comportamentos são chamados de métodos e os estados possíveis da classe são chamados de atributos.
-Ex:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Smalltalk
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Python
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Ruby
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> C++</p></div>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#quarto-paragrafo" class="panel-title" data-parent="#sobres-painel"><strong>Orientado a Obejetos</strong></h3>
+											</div>
+											<div id="quarto-paragrafo" class="collapse">
+												<div class="panel-body">
+												<div style="white-space: pre-line;">
+													<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A programação Orientada a Objetos é baseada na composição e interação de diversas unidades de softwares denominados objetos. O funcionamento de um software orientado a objetos se dá através do relacionamento e troca de mensagens entre esses objetos. Esses objetos são classes, e nessas classes os comportamentos são chamados de métodos e os estados possíveis da classe são chamados de atributos.
+	Ex:
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Smalltalk
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Python
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Ruby
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> C++</p></div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
 						    <div role="tabpanel" class="tab-pane" id="sub">
 
@@ -248,13 +257,221 @@ variáveis, conjunções e regras
 					
 
 				    </div>  	
+						</div>
+					</div>
 				</div>
 				
-			</div>
-				    </div>
-				    	<div role="tabpanel" class="tab-pane active" id="home">
-				    		<h2>Portifólio – Paradigmas de Programação</h2>
-				    		<h2></h2>
+<!---->				
+				<div role="tabpanel" class="tab-pane" id="n2"><!---->
+					<div class="container">
+						<div class="tab-content">
+							<!--div role="tabpanel" class="tab-pane active" id="n2"></div-->
+						
+						    <div role="tabpanel" class="tab-pane active" id="prop">
+
+						    	<h2 id="jumb">Propósito/Domínio de Programação</h2>
+						    	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As linguagens de programação desempenham um papel vital na criação de software, mas não são todas iguais. Cada linguagem é projetada com um propósito específico em mente, e é por isso que os desenvolvedores escolhem diferentes linguagens para diferentes domínios de programação. Os domínios de programação representam áreas de aplicação nas quais as linguagens são mais adequadas e eficazes</p>
+
+						    	<div class="row">
+								    <div id="sobres-painel-3" class="panel-group col-sm-6">
+										
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#primeiro-paragrafo-3" class="panel-title" data-parent="#sobres-painel-3"><strong>Script</strong></h3>
+											</div>
+											<div id="primeiro-paragrafo-3" class="collapse.in">
+												<div class="panel-body">
+												<div style="white-space: pre-line;"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O domínio de programação de script envolve o uso de linguagens de script para automação de tarefas, desenvolvimento web e outras aplicações que requerem facilidade de uso e flexibilidade. Linguagens como JavaScript, Python e Ruby são amplamente utilizadas nesse domínio. 
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elas são conhecidas por sua sintaxe amigável e são ideais para criar pequenos programas que automatizam tarefas rotineiras, como processamento de texto, manipulação de arquivos e interação com a interface do usuário. 
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Além disso, as linguagens de script desempenham um papel importante no desenvolvimento web, onde são usadas tanto no lado do cliente (JavaScript) quanto no lado do servidor (Python, Ruby on Rails). Essas linguagens são ideais para a rápida prototipagem e desenvolvimento ágil de software.</p></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#segundo-paragrafo-3" class="panel-title" data-parent="#sobres-painel-3"><strong>Científico</strong></h3>
+											</div>
+											<div id="segundo-paragrafo-3" class="collapse">
+												<div class="panel-body">
+												<div style="white-space: pre-line;"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O domínio de programação científico abrange o uso de linguagens de programação para modelagem, simulação e análise de dados em campos como física, química, biologia, engenharia e outras disciplinas científicas. 
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linguagens como Python, R e MATLAB são populares neste domínio devido à riqueza de bibliotecas e ferramentas disponíveis para análise de dados, visualização e cálculos numéricos. 
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essas linguagens permitem que cientistas e pesquisadores desenvolvam modelos complexos e realizem experimentos virtuais, tornando-as essenciais para avanços em pesquisa e inovação científica.</p></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#terceiro-paragrafo-3" class="panel-title" data-parent="#sobres-painel-3"><strong>Comercial</strong></h3>			
+											</div>
+											<div id="terceiro-paragrafo-3" class="collapse">
+												<div class="panel-body">
+												<div style="white-space: pre-line;"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O domínio de programação comercial se concentra no desenvolvimento de aplicativos empresariais, sistemas de gerenciamento, software de contabilidade, recursos humanos, e outras soluções de negócios. 
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linguagens como Java, C#, e SQL são amplamente usadas neste domínio devido à sua confiabilidade, desempenho e recursos de integração com sistemas corporativos. 
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Além disso, frameworks de desenvolvimento, como o Java Spring e o .NET Framework, são comuns para acelerar o desenvolvimento de aplicativos comerciais. 
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A segurança e a escalabilidade são fatores críticos em projetos comerciais, e essas linguagens oferecem suporte sólido para atender a essas necessidades.</p></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#quarto-paragrafo-3" class="panel-title" data-parent="#sobres-painel-3"><strong>I.A.</strong></h3>
+											</div>
+											<div id="quarto-paragrafo-3" class="collapse">
+												<div class="panel-body">
+												<div style="white-space: pre-line;"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O domínio de programação de Inteligência Artificial (I.A.) é um campo em crescimento que envolve o desenvolvimento de sistemas de software capazes de realizar tarefas que normalmente requerem inteligência humana, como aprendizado de máquina, processamento de linguagem natural e visão computacional. 
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linguagens como Python e R são populares neste domínio devido à disponibilidade de bibliotecas de aprendizado de máquina, como TensorFlow, scikit-learn e PyTorch, que simplificam o desenvolvimento de modelos de I.A. 
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Além disso, linguagens funcionais como Lisp também têm uma longa história em pesquisa de I.A. devido à sua flexibilidade e capacidade de representar conhecimento de maneira eficaz.</p></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						    <div role="tabpanel" class="tab-pane" id="crit">
+
+						    	<h2 id="jumb">Critérios de Avaliação</h2>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A escolha da linguagem de programação é um passo crítico no desenvolvimento de software. Diferentes linguagens atendem a diferentes necessidades e preferências, e a seleção adequada pode afetar diretamente a eficiência e a qualidade do projeto. Para avaliar e selecionar a linguagem de programação mais apropriada, é importante considerar diversos critérios:</p>
+
+						    	<div class="row">
+								    <div id="sobres-painel-4" class="panel-group col-sm-6">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#primeiro-paragrafo-4" class="panel-title" data-parent="#sobres-painel-4"><strong>Legibilidade</strong></h3>
+											</div>
+											<div id="primeiro-paragrafo-4" class="collapse.in">
+												<div class="panel-body">
+												<div style="white-space: pre-line;"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A legibilidade é um dos aspectos mais críticos na avaliação de uma linguagem de programação. Uma linguagem legível é aquela em que o código-fonte é claro, compreensível e fácil de seguir. Isso não apenas torna a manutenção e a colaboração mais fáceis, mas também reduz a probabilidade de erros. Vários critérios influenciam a legibilidade em uma linguagem de programação:
+
+1. Simplicidade Global:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma linguagem deve priorizar a simplicidade global. Isso significa que a linguagem deve ter uma sintaxe geral simples e consistente, evitando construções complexas e ambíguas. Uma sintaxe simples facilita a leitura do código e reduz a probabilidade de erros.
+
+2. Ortogonalidade:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A ortogonalidade em uma linguagem de programação se refere ao grau em que as características da linguagem são independentes e não interferem umas nas outras. Quanto maior a ortogonalidade, mais fácil é aprender e usar a linguagem, pois as regras são consistentes e previsíveis.
+
+3. Instruções de Controle:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As instruções de controle, como condicionais (if, else) e loops (for, while), devem ser intuitivas e fáceis de entender. A clareza das instruções de controle contribui significativamente para a legibilidade do código.
+
+4. Tipos de Dados:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma linguagem deve fornecer tipos de dados bem definidos e semântica clara para trabalhar com dados. Isso inclui tipos numéricos, strings, arrays e estruturas de dados. A consistência na representação e manipulação de dados ajuda a melhorar a legibilidade.
+
+5. Estruturas e Sintaxe:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A organização e a estrutura do código, juntamente com a sintaxe da linguagem, desempenham um papel fundamental na legibilidade. Uma linguagem deve permitir uma formatação clara e concisa do código, com identação adequada e uso de espaços em branco significativos. A sintaxe deve ser consistente e seguir convenções amplamente aceitas.</p></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#segundo-paragrafo-4" class="panel-title" data-parent="#sobres-painel-4"><strong>Capacidade de Escrita</strong></h3>
+											</div>
+											<div id="segundo-paragrafo-4" class="collapse">
+												<div class="panel-body">
+												<div style="white-space: pre-line;"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A capacidade de escrita, também conhecida como "writability," é um dos aspectos cruciais na avaliação de uma linguagem de programação. Refere-se à facilidade com a qual um programador pode escrever código de maneira eficiente, concisa e expressiva em uma linguagem. Vários critérios influenciam a capacidade de escrita em uma linguagem de programação:
+
+1. Simplicidade e Ortogonalidade:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma linguagem deve priorizar a simplicidade e ortogonalidade. A simplicidade envolve a minimização de construções desnecessárias e complexas, tornando o código mais fácil de escrever. A ortogonalidade refere-se ao grau em que as características da linguagem são independentes e não interferem umas nas outras, o que torna as regras da linguagem previsíveis e coerentes.
+
+2. Suporte para Abstração:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A capacidade de criar abstrações é fundamental. Uma linguagem de programação deve permitir que os desenvolvedores criem abstrações de alto nível para representar conceitos complexos, simplificando a escrita de código. Isso inclui a capacidade de definir funções, classes, módulos e estruturas de dados personalizadas.
+
+3. Expressividade:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A expressividade se refere à capacidade da linguagem de expressar ideias de maneira clara e concisa. Linguagens expressivas permitem que os desenvolvedores comuniquem suas intenções de forma direta, evitando a necessidade de escrever código excessivamente verboso. Isso torna o código mais legível e facilita a escrita.
+												</p></div>
+												</div>
+											</div>
+										</div>
+<!---->									
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#terceiro-paragrafo-4" class="panel-title" data-parent="#sobres-painel-4"><strong>Simplicidade e Ortogonalidade</strong></h3>			
+											</div>
+											<div id="terceiro-paragrafo-4" class="collapse">
+												<div class="panel-body">
+												<div style="white-space: pre-line;"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simplicidade e ortogonalidade são critérios cruciais na avaliação de linguagens de programação. Esses conceitos têm um impacto significativo na legibilidade, capacidade de escrita e manutenção do código. Vamos examinar esses critérios em detalhes:
+
+Simplicidade:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A simplicidade em uma linguagem de programação se refere à ausência de complexidade desnecessária. Uma linguagem simples é fácil de aprender e usar, tornando-a acessível a um público amplo. A simplicidade é alcançada através da eliminação de regras e construções desnecessárias, bem como da adoção de uma sintaxe clara e consistente. Linguagens simples são mais propensas a produzir código legível e compreensível.
+
+Ortogonalidade:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A ortogonalidade é um conceito que se refere ao grau em que as características da linguagem são independentes e não interferem umas nas outras. Em uma linguagem ortogonal, as regras de combinação de suas características são consistentes e previsíveis. Isso significa que os recursos da linguagem podem ser combinados de várias maneiras sem restrições arbitrárias, o que simplifica a linguagem e a torna mais coerente. A ortogonalidade ajuda a evitar exceções e comportamentos inesperados.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A simplicidade e a ortogonalidade são fatores essenciais para criar uma linguagem de programação eficaz e amigável ao desenvolvedor. A simplicidade torna a linguagem mais fácil de aprender, reduzindo a curva de aprendizado para novos programadores. Ela também torna o código mais legível, facilitando a manutenção e a depuração.</p></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#quarto-paragrafo-4" class="panel-title" data-parent="#sobres-painel-4"><strong>Suporte para Abstração</strong></h3>
+											</div>
+											<div id="quarto-paragrafo-4" class="collapse">
+												<div class="panel-body">
+												<div style="white-space: pre-line;"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A abstração desempenha um papel crucial no design de linguagens de programação, afetando diretamente a facilidade de escrita, que está relacionada à naturalidade da expressão e ao grau de abstração permitido por uma linguagem. As linguagens de programação podem oferecer suporte a duas categorias principais de abstrações: processos e dados.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para ilustrar a abstração de dados, considere o exemplo de uma árvore binária que armazena dados inteiros em seus nós. Em uma linguagem que não oferece suporte a ponteiros e gerenciamento de memória dinâmica, como Fortran, essa árvore poderia ser implementada utilizando três vetores inteiros paralelos, sendo dois deles usados como índices para especificar nós filhos. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por outro lado, em linguagens como C++ e Java, é possível implementar essas árvores de maneira muito mais natural, utilizando uma abstração de um nó de árvore na forma de uma simples classe com dois ponteiros (ou referências) e um inteiro. A representação mais natural torna a escrita de programas que envolvem árvores binárias consideravelmente mais fácil nas linguagens C++ e Java em comparação com Fortran.</p></div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#quinto-paragrafo-4" class="panel-title" data-parent="#sobres-painel-4"><strong>Expressividade</strong></h3>
+											</div>
+											<div id="quinto-paragrafo-4" class="collapse">
+												<div class="panel-body">
+												<div style="white-space: pre-line;"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A expressividade em linguagens de programação está relacionada à habilidade de realizar tarefas complexas de maneira clara e concisa. Isso é possível graças ao uso de operadores e estruturas de linguagem que simplificam a representação de operações sofisticadas em um código mais legível.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em Python, por exemplo, a expressividade é evidenciada pelo operador de atribuição (=), que permite realizar atribuições múltiplas em uma única linha. Essa capacidade de expressar operações complexas de forma eficiente é uma característica valiosa em linguagens de programação.</p></div>
+												</div>
+											</div>
+										</div>
+<!---->											
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#sexto-paragrafo-4" class="panel-title" data-parent="#sobres-painel-4"><strong>Confiabilidade</strong></h3>
+											</div>
+											<div id="sexto-paragrafo-4" class="collapse">
+												<div class="panel-body">
+												<div style="white-space: pre-line;"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A confiabilidade de um software é alcançada quando ele se comporta de acordo com suas especificações em todas as condições. Isso requer a realização de uma bateria de testes antes que o software seja disponibilizado aos usuários. 
+												
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Esses testes são essenciais para garantir que o software atenda às expectativas e funcione sem falhas, independentemente das circunstâncias. A confiabilidade é um dos pilares da qualidade de software, garantindo que os usuários possam contar com o programa em todas as situações.</p></div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3 data-toggle="collapse" data-target="#setimo-paragrafo-4" class="panel-title" data-parent="#sobres-painel-4"><strong>Custo</strong></h3>
+											</div>
+											<div id="setimo-paragrafo-4" class="collapse">
+												<div class="panel-body">
+												<div style="white-space: pre-line;"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O custo no desenvolvimento de software é um fator crítico a ser considerado. Envolve uma alocação de recursos financeiros, tempo e esforço para a criação, manutenção e atualização do software. Esses custos podem variar amplamente dependendo do tamanho e da complexidade do projeto. 
+												
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A gestão eficaz de custos é essencial para evitar desperdícios e garantir que o desenvolvimento seja economicamente viável. Isso inclui o monitoramento dos recursos, a estimativa precisa de custos e a manutenção de um orçamento adequado ao longo do ciclo de vida do projeto. 
+												
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A consideração cuidadosa dos custos é crucial para o sucesso de qualquer iniciativa de desenvolvimento de software.</p></div>
+												</div>
+											</div>
+										</div>
+									
+								</div>
+
+								
+							</div> 
+						</div>
+				
+					</div>
+				</div><!---->
+			</div><!---->
+				   	<div role="tabpanel" class="tab-pane active" id="home">
+				    	<h2>Portifólio – Paradigmas de Programação</h2>
+				    	<h2></h2>
 							<div style="white-space: pre-line;">
 								<p>Esse site tem como objetivo servir como um portifólio eletrônico da disciplina Paradigmas de Programação, ministrada pelo professor Bruno Diniz Faria Rezende na faculdade Unialfa – Perimetral. Os autores responsáveis pela criação desse projeto estão listados abaixo, bem como os link que creditam os autores de todo e qualquer ferramenta ou material usados para a construção desse site.
 
@@ -264,26 +481,23 @@ Autores:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Vitor Hugo
 
 Fontes Bibliográficas:
-https://www.youtube.com/watch?v=nIR4myZ8w9c
-https://chat.openai.com/
-https://www.online-cpp.com/online_c_compiler
-https://www.youtube.com/watch?v=4xD2ViRZnMY
-https://tech-lib.wiki/linguagem-da-maquina/
-https://dicadaora.com.br/maquina-de-turing-o-que-e-como-funciona/
-https://embarcados.com.br/arquitetura-de-john-von-neumann/
-https://www.esalq.usp.br/lepse/imgs/conteudo_thumb/A-Arquitetura-de-computador-de-von-Neumann.pdf
-https://linktr.ee/brunodiniz
-https://dcm.ffclrp.usp.br/~augusto/teaching/ia/IA-Prolog-Introducao-Tutorial.pdf
-https://www.ime.usp.br/~slago/slago-prolog.pdf
-							<p></div>
-				    </div> 
-				    <div role="tabpanel" class="tab-pane" id="n2">
-				    	<h2>Conteúdo n2</h2>
-				    	<p>Ainda a disponibilizar</p>
-				    </div> 
-				    <div role="tabpanel" class="tab-pane" id="profie">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.youtube.com/watch?v=nIR4myZ8w9c
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://chat.openai.com/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.online-cpp.com/online_c_compiler
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.youtube.com/watch?v=4xD2ViRZnMY
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://tech-lib.wiki/linguagem-da-maquina/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://dicadaora.com.br/maquina-de-turing-o-que-e-como-funciona/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://embarcados.com.br/arquitetura-de-john-von-neumann/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.esalq.usp.br/lepse/imgs/conteudo_thumb/A-Arquitetura-de-computador-de-von-Neumann.pdf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://linktr.ee/brunodiniz
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://dcm.ffclrp.usp.br/~augusto/teaching/ia/IA-Prolog-Introducao-Tutorial.pdf
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.ime.usp.br/~slago/slago-prolog.pdf
+						<p></div>
+					</div> 
+				    
+				    <!--div role="tabpanel" class="tab-pane" id="profie">
 				    	<img class="img-responsive col-sm-12" src="img/PS.gif" alt="Ainda não disponivel" id="jump">
-				    </div> 
+				    </div--> 
 				</div>  	
 			</div>
   		</section>
