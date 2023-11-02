@@ -28,10 +28,9 @@
 			      <ul class="nav navbar-nav">
 			        <li  role="presentation"><a href="#n1" aria-controls="n2" role="tab" data-toggle="tab">Ordem Assintónica</a></li>
 					<li  role="presentation"><a href="#n2" aria-controls="n2" role="tab" data-toggle="tab">Complexidade Pessimista</a></li>
-					<li  role="presentation"><a href="#n1" aria-controls="n2" role="tab" data-toggle="tab">Algorítmo Guloso</a></li>
-					<li  role="presentation"><a href="#n2" aria-controls="n2" role="tab" data-toggle="tab">Dividir para Conquistar</a></li>
-					<li  role="presentation"><a href="#n1" aria-controls="n2" role="tab" data-toggle="tab">Complexidade de Problemas</a></li>
-					<li  role="presentation"><a href="#n2" aria-controls="n2" role="tab" data-toggle="tab">Classe P, NP e NP-completo</a></li>
+					<li  role="presentation"><a href="#n3" aria-controls="n2" role="tab" data-toggle="tab">Algorítmo Guloso</a></li>
+					<li  role="presentation"><a href="#n4" aria-controls="n2" role="tab" data-toggle="tab">Dividir para Conquistar</a></li>
+					<li  role="presentation"><a href="#n5" aria-controls="n2" role="tab" data-toggle="tab">Complexidade de Problemas</a></li>
 			      </ul>
 			    </div>
 
@@ -43,58 +42,129 @@
 					<div role="tabpanel" class="tab-pane" id="n1">
 					<div class="container">
 			  			<div class="tab-content">
-						    <h2 id="jumb">Ordem Assintónica</h2>
-						    <p>[Texto - Ordem Assintónica]</p>
+						<div style="white-space: pre-line;">
+						    <h1 id="jumb">Ordem Assintótica</h1>
+						    <p><h3>O Que é Ordem Assintótica?</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A ordem assintótica é uma técnica usada para descrever o comportamento dos algoritmos à medida que o tamanho da entrada se torna cada vez maior. Ela fornece uma maneira de analisar como o tempo de execução (ou o uso de recursos, como memória) de um algoritmo cresce em relação ao tamanho da entrada. A ordem assintótica é vital para comparar algoritmos e prever seu desempenho em cenários de grande escala.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Existem três notações principais na ordem assintótica: O (grande O), Ω (ômega) e Θ (theta), cada uma com seu próprio significado e aplicação.
+<h3>Ordem O (Big O)</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A notação Big O (O) é usada para descrever o limite superior do crescimento do tempo de execução de um algoritmo em relação ao tamanho da entrada. Em outras palavras, ela fornece uma estimativa pessimista do desempenho. Quando dizemos que um algoritmo é O(f(n)), estamos afirmando que o tempo de execução do algoritmo nunca crescerá mais rápido do que a função f(n), à medida que n (o tamanho da entrada) aumenta.
+
+Exemplos comuns de notações Big O incluem:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- O(1): Tempo constante, onde o tempo de execução não depende do tamanho da entrada.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- O(log n): Tempo logarítmico, encontrado em algoritmos de busca binária.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- O(n): Tempo linear, onde o tempo de execução aumenta proporcionalmente ao tamanho da entrada.
+<h3>Ordem Ω (Ômega)</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A notação Ômega (Ω) é o oposto da notação Big O. Ela descreve o limite inferior do crescimento do tempo de execução de um algoritmo. Em outras palavras, Ω fornece uma estimativa otimista do desempenho. Quando dizemos que um algoritmo é Ω(f(n)), estamos afirmando que o tempo de execução do algoritmo nunca crescerá mais lentamente do que a função f(n) à medida que n aumenta.
+
+Exemplos de notações Ω incluem:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ω(1): Tempo constante, onde o tempo de execução não diminui à medida que a entrada cresce.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Ω(n): Tempo linear, onde o tempo de execução aumenta pelo menos na mesma taxa que o tamanho da entrada.
+<h3>Ordem Θ (Theta)</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A notação Theta (Θ) é usada quando queremos descrever o desempenho de um algoritmo de forma precisa e apontar tanto para o limite superior quanto para o limite inferior. Em outras palavras, Θ fornece uma estimativa exata do desempenho do algoritmo à medida que n cresce. Quando dizemos que um algoritmo é Θ(f(n)), estamos afirmando que o tempo de execução do algoritmo cresce de maneira idêntica à função f(n) à medida que n aumenta.
+
+Exemplos de notações Θ incluem:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Θ(n): Tempo linear, onde o tempo de execução cresce de maneira linear com o tamanho da entrada.
+</p>
 						    	
-					</div></div></div>
+					</div></div></div></div><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
 					
 					<div role="tabpanel" class="tab-pane" id="n2">
 					<div class="container">
 			  			<div class="tab-content">
+						<div style="white-space: pre-line;">
 						    <h2 id="jumb">Complexidade Pessimista</h2>
-						    <p>[Texto - Complexidade Pessimista]</p>
-						    	
-					</div></div></div>
+						    <p><!--h3>Complexidade Pessimista</h3-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A complexidade pessimista, também conhecida como complexidade no pior caso, é um conceito fundamental na análise de algoritmos. Ela descreve a quantidade máxima de recursos, como tempo de execução ou espaço de memória, que um algoritmo pode consumir quando é confrontado com a pior situação possível, ou seja, a entrada que mais desafie o algoritmo. Em análise de algoritmos, é comum nos concentrarmos na complexidade pessimista, uma vez que é uma abordagem conservadora e fornece uma garantia sólida de desempenho, independentemente das condições. É importante observar que a complexidade pessimista é frequentemente expressa usando notações da ordem assintótica, como O (grande O).
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ao determinar a complexidade pessimista de um algoritmo, consideramos fatores como o número de operações realizadas pelo algoritmo em relação ao tamanho da entrada e o pior cenário possível em termos de entrada. Essa análise ajuda os desenvolvedores a entender como o algoritmo se comportará em situações adversas e a projetar sistemas que possam lidar com as condições mais desafiadoras.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;É importante ressaltar que a complexidade pessimista não descreve o desempenho médio ou melhor caso de um algoritmo, mas sim a situação em que ele funciona de forma menos eficiente. Por exemplo, um algoritmo de ordenação pode ter uma complexidade O(n^2) no pior caso, o que significa que, no cenário mais desafiador, o número de operações executadas é proporcional ao quadrado do tamanho da entrada. No entanto, em muitos casos, esse algoritmo pode superar essa complexidade e ter um desempenho melhor.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para ilustrar, considere o algoritmo de busca linear, que tem uma complexidade pessimista O(n) no pior caso. Isso significa que, ao procurar um item em uma lista não ordenada, o algoritmo pode ter que percorrer todos os n elementos antes de encontrar o item desejado. Esse é o pior cenário, mas em situações em que o item é encontrado logo no início da lista, o algoritmo pode ser muito mais eficiente.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em resumo, a complexidade pessimista é uma ferramenta essencial na análise de algoritmos, pois fornece uma garantia de desempenho no cenário mais desafiador. Ao entender e calcular a complexidade pessimista de um algoritmo, os desenvolvedores podem projetar sistemas que são robustos e capazes de lidar com as condições mais adversas, garantindo a confiabilidade e a eficiência das soluções de software.
+</p>
+					</div></div></div></div>
 					
-				    <div role="tabpanel" class="tab-pane" id="n2">
+				    <div role="tabpanel" class="tab-pane" id="n3">
 					<div class="container">
 			  			<div class="tab-content">
+						<div style="white-space: pre-line;">
 						    <h2 id="jumb">Algorítmo Guloso</h2>
-						    <p>[Texto - Algorítmo Guloso]</p>
-						    	
-					</div></div></div>
+						    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O algoritmo guloso é uma abordagem de resolução de problemas em ciência da computação e matemática. Ele se baseia no princípio da escolha da opção localmente ótima a cada etapa, na esperança de alcançar uma solução globalmente ótima. Em outras palavras, o algoritmo guloso toma decisões que parecem ser as melhores no momento, sem considerar retrocessos futuros, na expectativa de que essas decisões levem a uma solução globalmente eficiente.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma aplicação comum do algoritmo guloso é no problema do "Caminho de Pessoa Mínimo" em teoria dos grafos. Nesse contexto, o objetivo é encontrar o caminho mais curto entre dois pontos em um grafo, onde os vértices representam locais e as arestas têm pesos que indicam o custo ou distância entre eles. O algoritmo de Dijkstra é um exemplo clássico de algoritmo guloso usado para resolver o problema do Caminho de Pessoa Mínimo.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O algoritmo de Dijkstra começa em um vértice de origem e avança para os vértices vizinhos com o menor custo, atualizando continuamente as estimativas de custo mínimo à medida que se move. Esse processo é repetido até que todos os vértices tenham sido considerados. O resultado é um caminho mínimo do vértice de origem a todos os outros vértices no grafo. O algoritmo de Dijkstra é uma abordagem gulosa, pois, a cada passo, escolhe o vértice mais promissor para expansão com base no custo mínimo conhecido até o momento.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No entanto, vale ressaltar que o algoritmo guloso não é adequado para todos os tipos de problemas. Ele funciona bem em situações em que a escolha localmente ótima em cada etapa leva a uma solução globalmente ótima. Mas, em problemas onde a escolha puramente gulosa pode levar a soluções subótimas, é necessário considerar abordagens mais abrangentes, como algoritmos de programação dinâmica.
+</p>
+					</div></div></div></div>
 					
-					<div role="tabpanel" class="tab-pane" id="n2">
+					<div role="tabpanel" class="tab-pane" id="n4">
 					<div class="container">
 			  			<div class="tab-content">
+						<div style="white-space: pre-line;">
 						    <h2 id="jumb">Dividir para Conquistar</h2>
-						    <p>[Texto - Dividir para Conquistar]</p>
-						    	
-					</div></div></div>
+						    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A estratégia "Dividir para Conquistar" é um paradigma de resolução de problemas amplamente utilizado em ciência da computação e matemática. Essa abordagem quebra um problema complexo em subproblemas menores, resolve cada subproblema de forma independente e, em seguida, combina as soluções para obter a solução global.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um exemplo notável da aplicação da estratégia "Dividir para Conquistar" é a busca em árvore, comumente usada em algoritmos de busca e ordenação. A árvore binária de busca é um exemplo clássico, onde um problema é dividido em dois subproblemas menores: o subproblema da subárvore esquerda e o subproblema da subárvore direita. Essa divisão continua até que os subproblemas se tornem trivialmente solucionáveis, ou seja, alcancem um único nó da árvore.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Um algoritmo de busca em árvore, como a busca binária, segue a estratégia "Dividir para Conquistar" para procurar por um elemento específico em uma estrutura de dados. Começa dividindo o conjunto de dados em duas metades e escolhendo a metade que provavelmente contém o elemento desejado. Esse processo é repetido até que o elemento seja encontrado ou não exista no conjunto de dados.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Além da busca em árvore, a estratégia "Dividir para Conquistar" é aplicada em muitos outros algoritmos e problemas. Alguns exemplos notáveis incluem algoritmos de ordenação, como o Merge Sort e o Quick Sort, que dividem o conjunto de dados em subconjuntos menores e depois os combinam de maneira ordenada. Além disso, o Teorema Mestre é uma ferramenta matemática que ajuda a analisar a complexidade de algoritmos que seguem o paradigma "Dividir para Conquistar".
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Essa abordagem é amplamente reconhecida por sua eficiência na resolução de uma variedade de problemas, pois permite uma solução estruturada e geralmente mais eficaz. No entanto, é importante observar que nem todos os problemas podem ser resolvidos de maneira eficiente com a estratégia "Dividir para Conquistar". Alguns problemas podem não se encaixar bem no paradigma e podem ser mais eficazmente abordados por outros métodos.
+</p>
+					</div></div></div></div>
 					
-					<div role="tabpanel" class="tab-pane" id="n2">
+					<div role="tabpanel" class="tab-pane" id="n5">
 					<div class="container">
 			  			<div class="tab-content">
+						<div style="white-space: pre-line;">
 						    <h2 id="jumb">Complexidade de Problemas</h2>
-						    <p>[Texto - Complexidade de Problemas]</p>
-						    	
-					</div></div></div>
+						    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A análise de complexidade de problemas é um campo fundamental na ciência da computação, que visa classificar e entender a dificuldade de resolver diferentes tipos de problemas. Existem várias classes de complexidade de problemas, sendo três das mais notáveis a Classe P, a Classe NP e a Classe NP-completo.
+
+<h3>Classe P (Polinomial)</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Classe P, abreviação de "Polinomial," engloba problemas para os quais uma solução pode ser encontrada em tempo polinomial, ou seja, o tempo necessário para resolvê-los cresce de forma limitada com o tamanho da entrada. Esses problemas são considerados "facilmente resolvíveis" em termos de tempo de execução. Exemplos de problemas em P incluem a ordenação de uma lista de números, a busca em uma tabela hash e a verificação de equações lineares.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Problemas em P são altamente desejáveis na computação, pois algoritmos eficientes podem resolvê-los em tempo razoável, mesmo quando a entrada é grande. O paradigma "Dividir para Conquistar," que mencionamos anteriormente, frequentemente leva a algoritmos que se enquadram na Classe P. No entanto, nem todos os problemas se encaixam nesta categoria, e a busca pela eficiência em algoritmos é uma tarefa contínua.
+
+<h3>Classe NP (Não-determinístico Polinomial)</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Classe NP, que significa "Não-determinístico Polinomial," inclui problemas que, embora difíceis de resolver, têm soluções que podem ser verificadas em tempo polinomial. Isso significa que, dado um candidato a solução, podemos verificar se ele está correto em tempo polinomial. Um exemplo clássico é o Problema do Clique, que envolve encontrar o maior conjunto de vértices em um grafo completo onde cada par de vértices está conectado. Se alguém propuser um conjunto como candidato, podemos verificar rapidamente se é realmente uma clique.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Classe NP é notável porque muitos problemas do mundo real se encaixam nessa categoria. No entanto, a questão de se esses problemas podem ser resolvidos em tempo polinomial (ou seja, se P = NP) é uma das questões mais importantes e não resolvidas da ciência da computação. Resolver essa questão tem implicações significativas em criptografia, otimização e muitos outros campos.
+
+<h3>Classe NP-completo (NP-completude)</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Classe NP-completo é uma classe especial de problemas em NP que são considerados tão difíceis que se um algoritmo eficiente (P) fosse encontrado para qualquer um deles, então um algoritmo eficiente poderia ser encontrado para todos os problemas em NP. Em outras palavras, os problemas NP-completos são os "mais difíceis" da Classe NP. Um exemplo de problema NP-completo é o Problema do Caixeiro Viajante, que envolve encontrar o menor caminho que visita todas as cidades exatamente uma vez.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Classe NP-completo é crucial na teoria da complexidade de problemas porque a questão de P igual a NP ou não é uma das questões mais famosas em aberto da ciência da computação. A maioria dos especialistas acredita que P não é igual a NP, mas essa questão permanece não resolvida. A importância dos problemas NP-completos se estende além da teoria, pois muitos problemas do mundo real podem ser reduzidos a problemas NP-completos, demonstrando sua relevância prática.
+</p>
+					</div></div></div></div>
 					
-					<div role="tabpanel" class="tab-pane" id="n2">
-					<div class="container">
-			  			<div class="tab-content">
-						    <h2 id="jumb">Classe P, NP e NP-completo</h2>
-						    <p>[Texto - Classe P, NP e NP-completo]</p>
-						    	
-					</div></div></div>
+					
 					
 					
 					
 					<div role="tabpanel" class="tab-pane active" id="home">
 				    	<h2>Portifólio – Complexidade de Algorítmos</h2>
-				    	<h2></h2>
-						<div style="white-space: pre-line;">
-							<p>Introdução site
+				    	<div style="white-space: pre-line;">
+							<p>Esse site tem como objetivo servir como um portifólio eletrônico da disciplina Complexidade de Algorítmos, ministrada pelo professor Bruno Diniz Faria Rezende na faculdade Unialfa – Perimetral. Os autores responsáveis pela criação desse projeto estão listados abaixo, bem como os link que creditam os autores de todo e qualquer ferramenta ou material usados para a construção desse site.
+
+Autor:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Rogério Rodrigues Rocha
+
+Co-autor/Colaborador: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> Kiosefy Samuel de Oliveira Bastos
+
+Fontes Bibliográficas:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://chat.openai.com/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://linktr.ee/brunodiniz
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/Oh.html
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://pt.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/functions-in-asymptotic-notation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://ubiq.inf.ufpel.edu.br/ptdavet/lib/exe/fetch.php?media=complexidade_de_estruturas_algoritmicas_matheus_patricia_thiagopontes.pdf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://pt.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/NPcompleto.html
 						<p></div>
 				    </div> 
 				    <div role="tabpanel" class="tab-pane" id="profie">
