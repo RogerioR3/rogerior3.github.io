@@ -6,7 +6,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="icon" href="images/Illuminati-Logo.png">
 		<title>Paradigmas</title>
 	</head>
 	<body>
@@ -181,7 +180,7 @@
 
 								    <div id="div-painel" class="panel-group col-sm-6">
 									<div class="panel panel-default">
-										<div class="panel-heading">
+										<div class="panel-heading" onclick="ling1()>
 											<h3 data-toggle="collapse" data-target="#prim-paragrafo" class="panel-title" data-parent="#div-painel"><strong>LISP</strong></h3>
 										</div>
 										<div id="prim-paragrafo" class="collapse.in">
@@ -192,7 +191,7 @@
 									</div>
 
 									<div class="panel panel-default">
-										<div class="panel-heading">
+										<div class="panel-heading" onclick="ling2()>
 											<h3 data-toggle="collapse" data-target="#seg-paragrafo" class="panel-title" data-parent="#div-painel"><strong>C</strong></h3>
 										</div>
 										<div id="seg-paragrafo" class="collapse">
@@ -218,8 +217,8 @@ variáveis, conjunções e regras
 										</div>
 									</div>
 
-									<!--div class="panel panel-default">
-										<div class="panel-heading" onclick="getElementById('ling').innerHTML= 'index.html' ">
+									<div class="panel panel-default">
+										<div class="panel-heading" onclick="ling4()>
 											<h3 data-toggle="collapse" data-target="#qua-paragrafo" class="panel-title" data-parent="#div-painel"><strong>Linguagem 4</strong></h3>
 										</div>
 										<div id="qua-paragrafo" class="collapse">
@@ -227,7 +226,7 @@ variáveis, conjunções e regras
 												<p>Texto sobre a linguaguem 4.</p>
 											</div>
 										</div>
-									</div-->
+									</div>
 
 									<div class="panel panel-default">
 										<div class="panel-heading" onclick="ling5()">
@@ -249,8 +248,7 @@ variáveis, conjunções e regras
 								<section>
 								<h3>Material de ajuda</h3>
 									<div class="embed-responsive embed-responsive-4by3">
-									<p id="ling">teste</p>
-									<iframe class="embed-responsive-item" id="ling" src="" ></iframe>
+									<div id="embedContainer"></div>
 								</div>
 								</section>				
 					</div>
