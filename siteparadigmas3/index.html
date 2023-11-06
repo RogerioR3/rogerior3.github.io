@@ -203,7 +203,7 @@
 
 									<div class="panel panel-default">
 										<div class="panel-heading" onclick="ling3()">
-											<h3 data-toggle="collapse" data-target="#ter-paragrafo" class="panel-title" data-parent="#div-painel"><strong>PROLOS</strong></h3>			
+											<h3 data-toggle="collapse" data-target="#ter-paragrafo" class="panel-title" data-parent="#div-painel"><strong>PROLOG</strong></h3>			
 										</div>
 										<div id="ter-paragrafo" class="collapse">
 											<div class="panel-body">
@@ -218,12 +218,14 @@ variáveis, conjunções e regras
 									</div>
 
 									<div class="panel panel-default">
-										<div class="panel-heading" onclick="ling4()>
-											<h3 data-toggle="collapse" data-target="#qua-paragrafo" class="panel-title" data-parent="#div-painel"><strong>Linguagem 4</strong></h3>
+										<div class="panel-heading" onclick="ling4()">
+											<h3 data-toggle="collapse" data-target="#qua-paragrafo" class="panel-title" data-parent="#div-painel"><strong>Lua</strong></h3>
 										</div>
 										<div id="qua-paragrafo" class="collapse">
 											<div class="panel-body">
-												<p>Texto sobre a linguaguem 4.</p>
+												<p>Lua é uma linguagem de programação poderosa, eficiente e leve, projetada para estender aplicações. Ela permite programação procedural, programação orientada a objetos, programação funcional, programação orientada a dados e descrição de dados.</p>
+
+												<p>Lua combina sintaxe procedural simples com poderosas construções para descrição de dados baseadas em tabelas associativas e semântica extensível. Lua é tipada dinamicamente, é executada via interpretação de bytecodes para uma máquina virtual baseada em registradores, e tem gerenciamento automático de memória com coleta de lixo incremental. Essas características fazem de Lua uma linguagem ideal para configuração, automação (scripting) e prototipagem rápida..</p>
 											</div>
 										</div>
 								    </div>
@@ -499,52 +501,63 @@ Fontes Bibliográficas:
 			</div>
   		</section>
 	<script>
-	    function ling1() {
-	      const embedContainer = document.getElementById('embedContainer');
-	      embedContainer.innerHTML = ''; // Limpa o conteúdo anterior, se houver.
-
-	      const iframe = document.createElement('iframe');
-	      iframe.src = 'https://chat.openai.com/c/c64d0176-33df-4b4f-8416-f549dbcce1f6'; // Defina a URL desejada aqui.
-	      iframe.width = '100%'; // Tamanho responsivo.
-	      iframe.height = '400'; // Altura fixa (você pode ajustar conforme necessário).
-
-	      embedContainer.appendChild(iframe);
-	    }
-
-	    function ling2() {
-	      const embedContainer = document.getElementById('embedContainer');
-	      embedContainer.innerHTML = ''; // Limpa o conteúdo anterior, se houver.
-
-	      const iframe = document.createElement('iframe');
-	      iframe.src = 'https://www.lua.org/pil/contents.html'; // Defina a URL desejada aqui.
-	      iframe.width = '100%'; // Tamanho responsivo.
-	      iframe.height = '400'; // Altura fixa (você pode ajustar conforme necessário).
-
-	      embedContainer.appendChild(iframe);
-	    }
-	    function ling3() {
-	      const embedContainer = document.getElementById('embedContainer');
-	      embedContainer.innerHTML = ''; // Limpa o conteúdo anterior, se houver.
-
-	      const iframe = document.createElement('iframe');
-	      iframe.src = 'https://chat.openai.com/c/c64d0176-33df-4b4f-8416-f549dbcce1f6'; // Defina a URL desejada aqui.
-	      iframe.width = '100%'; // Tamanho responsivo.
-	      iframe.height = '400'; // Altura fixa (você pode ajustar conforme necessário).
-
-	      embedContainer.appendChild(iframe);
-	    }
-
-	    function ling5() {
-	      const embedContainer = document.getElementById('embedContainer');
-	      embedContainer.innerHTML = ''; // Limpa o conteúdo anterior, se houver.
-
-	      const iframe = document.createElement('iframe');
-	      iframe.src = 'https://rogerior3.github.io/compiladores/teste_c5.html'; // Defina a URL desejada aqui.
-	      iframe.width = '100%'; // Tamanho responsivo.
-	      iframe.height = '400'; // Altura fixa (você pode ajustar conforme necessário).
-
-	      embedContainer.appendChild(iframe);
-	    }
+		function ling1() {
+		      const embedContainer = document.getElementById('embedContainer');
+		      embedContainer.innerHTML = ''; // Limpa o conteúdo anterior, se houver.
+	
+		      const iframe = document.createElement('iframe');
+		      iframe.src = 'https://chat.openai.com/c/c64d0176-33df-4b4f-8416-f549dbcce1f6'; // Defina a URL desejada aqui.
+		      iframe.width = '100%'; // Tamanho responsivo.
+		      iframe.height = '400'; // Altura fixa (você pode ajustar conforme necessário).
+	
+		      embedContainer.appendChild(iframe);
+		    }
+	
+		function ling2() {
+		      const embedContainer = document.getElementById('embedContainer');
+		      embedContainer.innerHTML = ''; // Limpa o conteúdo anterior, se houver.
+	
+		      const iframe = document.createElement('iframe');
+		      iframe.src = 'https://www.w3schools.com/c/c_intro.php'; // Defina a URL desejada aqui.
+		      iframe.width = '100%'; // Tamanho responsivo.
+		      iframe.height = '400'; // Altura fixa (você pode ajustar conforme necessário).
+	
+		      embedContainer.appendChild(iframe);
+		    }
+		function ling3() {
+		      const embedContainer = document.getElementById('embedContainer');
+		      embedContainer.innerHTML = ''; // Limpa o conteúdo anterior, se houver.
+	
+		      const iframe = document.createElement('iframe');
+		      iframe.src = 'https://chat.openai.com/c/c64d0176-33df-4b4f-8416-f549dbcce1f6'; // Defina a URL desejada aqui.
+		      iframe.width = '100%'; // Tamanho responsivo.
+		      iframe.height = '400'; // Altura fixa (você pode ajustar conforme necessário).
+	
+		      embedContainer.appendChild(iframe);
+		    }
+		function ling4() {
+		      const embedContainer = document.getElementById('embedContainer');
+		      embedContainer.innerHTML = ''; // Limpa o conteúdo anterior, se houver.
+	
+		      const iframe = document.createElement('iframe');
+		      iframe.src = 'https://www.lua.org/portugues.html'; // Defina a URL desejada aqui.
+		      iframe.width = '100%'; // Tamanho responsivo.
+		      iframe.height = '400'; // Altura fixa (você pode ajustar conforme necessário).
+	
+		      embedContainer.appendChild(iframe);
+		    }
+			
+		function ling5() {
+		      const embedContainer = document.getElementById('embedContainer');
+		      embedContainer.innerHTML = ''; // Limpa o conteúdo anterior, se houver.
+	
+		      const iframe = document.createElement('iframe');
+		      iframe.src = 'https://rogerior3.github.io/compiladores/teste_c5.html'; // Defina a URL desejada aqui.
+		      iframe.width = '100%'; // Tamanho responsivo.
+		      iframe.height = '400'; // Altura fixa (você pode ajustar conforme necessário).
+	
+		      embedContainer.appendChild(iframe);
+		    }
 	</script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js" 
 		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
